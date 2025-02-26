@@ -1,0 +1,89 @@
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #f8a5c2;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FF4081;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+html, body {
+    height: 100%; /* Faz o body ocupar toda a altura da tela */
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+}
+
+main {
+    flex: 1;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: #e84393
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 20px; /* Espaçamento entre as imagens */
+    justify-items: center; /* Centraliza os itens na grade */
+    align-items: center; /* Alinha verticalmente */
+    max-width: 900px; /* Limita a largura para manter proporção */
+    margin: 0 auto; /* Centraliza no meio da tela */
+}
+
+.galeria img {
+    width: 100%; /* Ajusta automaticamente para ocupar a coluna */
+    max-width: 280px; /* Limita o tamanho máximo */
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    padding: 15px;
+    background-color: #f8a5c2;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    width: 100%;
+    position: relative;
+}
