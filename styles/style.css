@@ -42,6 +42,7 @@ html, body {
     height: 100%; 
     display: flex;
     flex-direction: column; 
+    background-color: #f2d8e5;
 }
 
 main {
